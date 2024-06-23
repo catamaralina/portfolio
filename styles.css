@@ -1,0 +1,229 @@
+/* COLOR PALLETTE 
+DARK GREEN      #334B35
+BEIGE           #F6EEE1
+YELLOW          #FDAD16
+BLACK           #000000
+ORANGE          #FF5640
+*/
+
+body {
+    margin:0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: pink;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+/*     -----     -----     -----     -----     -----     -----     FONT FORMATTING     -----     -----     -----     -----     -----     -----*/
+/* FONT FORMATTING */
+p {
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.w {
+    color:white;
+    font-weight: 200;
+    font-style: light;
+}
+
+h1.hello {
+    font-family: "DM Serif Text", serif;
+    font-size: 4em;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+h1.title {
+    font-family: "DM Serif Text", serif;
+    font-size: 8em;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #FDAD16;
+    -webkit-text-fill-color: #334B35;
+    text-align: center;
+    text-shadow: 0px 1px 4px #23430C;
+    padding: 20px;
+}
+
+/*     -----     -----     -----     -----     -----     -----     SOCIALS     -----     -----     -----     -----     -----     -----*/
+/* SOCIALS */
+.social {
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*     -----     -----     -----     -----     -----     -----     DIV BLOKCS      -----     -----     -----     -----     -----     -----*/
+/*GENERAL LAYOUT*/
+.sectiongreen, .sectionwhite, .sectionblack, .header, footer {
+    padding: 20px; /*gives inside padding*/
+    position: relative;
+    background-color: white;
+    align-content: center;
+    height: auto;
+}
+
+.orange {
+    background-color:#FDAD16;
+    border-radius: 20px;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.sectiongreen {
+    background-color: #334B35;
+    color: #F6EEE1;
+}
+
+.sectionwhite {
+    background-color: #F6EEE1;
+}
+
+.sectionblack {
+    background-color: black;
+}
+
+
+/*     -----     -----     -----     -----     -----     -----     COLUMN DISPLAY     -----     -----     -----     -----     -----     -----*/
+/* section 2 columns*/
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.rowspan {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+}
+
+/*text*/
+.sidenotes {
+    border: none;
+    height: 100%;
+    float: right;
+    position: relative;
+    object-fit: scale-down;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+
+/*     -----     -----     -----     -----     -----     -----     IMAGE     -----     -----     -----     -----     -----     -----*/
+/* IMAGE */
+.sideimg {
+    border: none;
+    height: auto;
+    /*float: right;
+    position: relative;
+    object-fit: scale-down;*/
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+img.side {
+    width: 500px;
+    margin: auto;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 0px;
+    margin: none;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 200;
+    font-style: light;
+    padding: 5px;
+    text-align: center;
+}
+
+
+iframe {
+    width: 100%;
+    height: 90%;
+    border: 2px solid #FFBE98;
+    overflow:hidden;
+    margin: 0px;
+    position: block;
+}
+
+/*     -----     -----     -----     -----     -----     -----     HEADER     -----     -----     -----     -----     -----     -----*/
+/*HEADER SECTION SPECIFIC*/
+.header {
+    background-color: #334B35;
+    color: #F3F3F3;
+    font-size: 36px;
+    padding: 20px;
+    font-family: "DM Serif Text", serif;
+}
+
+.header a {
+    color: #F3F3F3;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.header a.split {
+    float: left;
+}
+
+a:hover {
+    color: #FF5640;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    display: inline;
+}
+
+/*SECTION SPECIFIC FORMATTING*/
+.content {
+    height: 900px;
+}
+
+.map {
+    height: 500px;
+}
+
+
+/*     -----     -----     -----     -----     -----     -----     FOOTER     -----     -----     -----     -----     -----     -----*/
+footer
+{
+    background-color:#334B35;
+    padding:20px;
+    font-size:15px;
+    color:white;
+    float: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
