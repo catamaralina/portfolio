@@ -22,7 +22,12 @@ body {
 
 /*     -----     -----     -----     -----     -----     -----     FONT FORMATTING     -----     -----     -----     -----     -----     -----*/
 /* FONT FORMATTING */
-p {
+
+h1 {
+    font-family: "DM Serif Text", serif;
+}
+
+p, li{
     font-size: 1.25em;
     text-align: justify;
 }
@@ -33,23 +38,68 @@ p {
     font-style: light;
 }
 
-h1.hello {
-    font-family: "DM Serif Text", serif;
+h1.hello, h1.o {
     font-size: 4em;
     text-align: center;
     color: black;
     padding: 10px;
 }
 
+h1.o {
+    color: #FDAD16;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.sectiongreen .container2 .orange h1, .sectiongreen .container2 .orange h2 {
+    color: black;
+}
+
+/* portfolio title*/
 h1.title {
-    font-family: "DM Serif Text", serif;
+
     font-size: 8em;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: #FDAD16;
     -webkit-text-fill-color: #334B35;
     text-align: center;
     text-shadow: 0px 1px 4px #23430C;
-    padding: 20px;
+    padding: 100px 20px;
+
+}
+
+h2 {
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 1.00em;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.sectiongreen h1, .sectiongreen p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.sectionwhite h2, .sectionwhite h3, .sectionwhite ul li {
+    color: black;
+    text-align: left;
 }
 
 /*     -----     -----     -----     -----     -----     -----     SOCIALS     -----     -----     -----     -----     -----     -----*/
@@ -60,6 +110,40 @@ h1.title {
     padding: 10px;
     text-align: center;
 }
+
+/*     -----     -----     -----     -----     -----     -----     LIST     -----     -----     -----     -----     -----     -----*/
+
+/* .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.header li {
+    display: inline;
+} */
+ul {
+    padding-inline-start: 0px;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.sectionwhite ul, .orange ul {
+    padding-inline-start: 40px;
+}
+
+.sectionwhite ul li, .orange ul li {
+    display: list-item;
+    list-style-type: disc;
+    padding-left: 5px;
+    list-style-position: outside;
+    padding: 2px;
+    text-align: justify;
+}
+
 
 /*     -----     -----     -----     -----     -----     -----     DIV BLOKCS      -----     -----     -----     -----     -----     -----*/
 /*GENERAL LAYOUT*/
@@ -83,12 +167,26 @@ h1.title {
     color: #F6EEE1;
 }
 
+.sectiongreen .container2{
+    align-items: center;
+}
+
+.sectiongreen .container2 .orange {
+    padding: 5px 20px;
+    color: black;
+    width: 100%;
+    margin-right:0px;
+    margin-left:-20px;
+    margin-top: 10px;
+}
+
 .sectionwhite {
     background-color: #F6EEE1;
 }
 
 .sectionblack {
     background-color: black;
+    text-align: center;
 }
 
 
@@ -100,6 +198,7 @@ h1.title {
     column-gap: 20px;
     padding: 5px;
     text-align: center;
+    margin: 0px;
 }
 
 .rowspan {
@@ -124,6 +223,17 @@ h1.title {
 
 /*     -----     -----     -----     -----     -----     -----     IMAGE     -----     -----     -----     -----     -----     -----*/
 /* IMAGE */
+img.small{
+    max-width: 600px;
+    border: none;
+    float: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* FROM: https://www.w3schools.com/howto/howto_css_modal_images.asp
+/* Style the Image Used to Trigger the Modal */
+
 .sideimg {
     border: none;
     height: auto;
@@ -194,15 +304,6 @@ a:hover {
     color: #FF5640;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-  
-li {
-    display: inline;
-}
 
 /*SECTION SPECIFIC FORMATTING*/
 .content {
