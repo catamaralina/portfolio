@@ -25,6 +25,9 @@ body {
 a {
     text-decoration: none;
 }
+.sectionblack a {
+    color: #FDAD16;
+}
 
 h1 {
     font-family: "DM Serif Text", serif;
@@ -64,7 +67,6 @@ h1.o {
 
 /* portfolio title*/
 h1.title {
-
     font-size: 8em;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: #FDAD16;
@@ -97,15 +99,24 @@ h3 {
 .sectiongreen h1, .sectiongreen p {
     margin-top: 0px;
     margin-bottom: 0px;
-    text-align: center;
+
 }
 
 .sectiongreen h2.light {
     font-weight: 500;
+
 }
 
 .sectionwhite h2, .sectionwhite h3, .sectionwhite ul li {
     color: black;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
     text-align: left;
 }
 
@@ -138,11 +149,11 @@ ul li {
     text-align: center;
 }
 
-.sectionwhite ul, .orange ul {
+.sectiongreen ul, .orange ul , .sectionblack ul{
     padding-inline-start: 40px;
 }
 
-.sectionwhite ul li, .orange ul li {
+.sectiongreen ul li, .orange ul li , .sectionblack ul li, .sectionblack ol li, .sectionblack ol li dl{
     display: list-item;
     list-style-type: disc;
     padding-left: 5px;
@@ -151,6 +162,23 @@ ul li {
     text-align: justify;
 }
 
+.sectionblack ol li dl{
+    display: list-item;
+    list-style-type: disc;
+    padding-left: 10px;
+    list-style-position: outside;
+    padding: 2px;
+    text-align: justify;
+}
+
+.sectionblack ol li{
+    display: list-item;
+    list-style-type: decimal;
+    padding-left: 5px;
+    list-style-position: outside;
+    padding: 2px;
+    text-align: justify;
+}
 
 /*     -----     -----     -----     -----     -----     -----     DIV BLOKCS      -----     -----     -----     -----     -----     -----*/
 /*GENERAL LAYOUT*/
@@ -176,9 +204,6 @@ ul li {
     color: #F6EEE1;
 }
 
-.sectiongreen .container2{
-    align-items: center;
-}
 
 .sectiongreen .container2 .orange {
     padding: 5px 20px;
@@ -197,7 +222,9 @@ ul li {
 .sectionblack {
     background-color: black;
     text-align: center;
+    color: white;
 }
+
 
 
 /*     -----     -----     -----     -----     -----     -----     COLUMN DISPLAY     -----     -----     -----     -----     -----     -----*/
@@ -209,6 +236,30 @@ ul li {
     padding: 5px;
     text-align: center;
     margin: 0px;
+}
+
+.sectiongreen .container2{
+    align-items: start;
+    column-gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+.container3 .column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.container3 .column img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    vertical-align: middle;
 }
 
 .rowspan {
@@ -226,7 +277,6 @@ ul li {
     padding: 5px;
     text-align: center;
 }
-
 
 
 

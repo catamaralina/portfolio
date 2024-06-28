@@ -20,32 +20,43 @@
 
 <body><!-- beginning of content -->
     <div class="header">
-        <a class="split" href="#home">Tali Jonker</a>
+        <a class="split">Tali Jonker</a>
         <a href="#about">About Me</a>
         <a href="#resume">Resume</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#gisp">Portfolio</a>
     </div>
 
 
     <div class="sectiongreen" id="home">
-        <h1 class="title">Portfolio</h1>
+        <h1 class="title">GIS Portfolio</h1>
+
+        <h1 class="o" id="gisp">Contents</h1>
+        <a href = #satellite><h2 class="light">False Color Composite of Central Pennsylvania</h2></a>
+        <a href = #japan><h2 class="light">POI & trail map for Higashiyama, Japan</h2></a>
+        <a href = #topographic><h2 class="light">Topographic Map: Caledon, Ontario</h2></a>
+        <a href = #census><h2 class="light">Census Population: Caledon, Ontario</h2></a>
+        <a href = #qualititative><h2 class="light">Map: Caledon, Ontario</h2></a>
+        <a href = "https://storymaps.arcgis.com/stories/63c7832f7c424f8c964264d891045863" target="_blank"><h2 class="light">Great Blue Heron Nesting</h2></a>
     </div>
+    <div class="sectionblack container3">
+        <div class="column">
+            <img class="myImg" id="satellite" src="media/Geom75Final.jpg" alt="False Color Composite of Central Pennsylvania">
+            <img class="myImg" id="japan" src="media/Higashiyama.jpg" alt="POI & trail map for Higashiyama, Japan">
+            <img class="myImg" id="census" src="media/CaledonCensus.jpg" alt="Census Map of Caledon, Ontario">
 
-    <div class="sectionblack">
-        <div class="container2">
-            <p class="w">
-                I love finding different ways to bridge the gap between science and art. 
-                With my creativity from my artistic background and logical mind from my love of programming & science,
-                 I am well-equipped to find unique and resourceful solutions to challenging problems.
-            </p>
-            <div class="orange">
-                <h1>Connect</h1>
-                <a href="https://www.linkedin.com/in/talijonker/" class="social"><i class="fa-brands fa-linkedin"></i></a>
-
-                <a href="mailto:tali.jonker@gmail.com" class="social"><i class="far fa-envelope"></i></a>
-            </div>
+        </div>
+        <div class="column">
+            <img class="myImg" id="qualitative" src="media/CaledonQualitative.jpg" alt="Qualitative Map of Caledon, Ontario">
+            <img class="myImg" id="topographic" src="media/CaledonTopographicMap.jpg" alt="Topographic Map of Caledon, Ontario">
         </div>
     </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>    
+
 
     <div class="sectionwhite" id="about">
         <div class="container2">
@@ -54,37 +65,7 @@
             </div>
                 
             <div class="rowspan">
-                <figure>
-                    <img src="media/girl.png" alt="digital drawing of girl" class="side">
-                    <figcaption>Hobbies include: multimedia/watercolour/acrylic painting, craft chocolate, 20th century history, camping & hiking.</figcaption> 
-                </figure>
-
-            </div>
-
-            <div>
-                <p>I am a self-proclaimed "Jack-of-all-trades" based in Canada. While I occasionally do wall murals, my background is mainly in remote sensing and programming. 
-                    I graduated from York U in 2020 with a BSc. Honors in Earth & Atmospheric Science specializing in Space Science (aka satellites) and a Certificate in Meteorology.
-                    In 2024, I completed the GIS Applications Specialist post-graduate certificate at Fleming where I was able to build on the skills learned in my degree. </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="sectiongreen" id="resume">
-        <div class="container2" >
-            <div class="light">
-                <h1 class="o">Education</h1>
-                <h2>GIS Applications Specialist Certificate | 2023-2024</h2>
-                <p><i>Spatial analysis, geovisualization, web design & web GIS development, GIS databases</i></p>
-        
-                <h2>BSc (Spec Hons) Space Science | 2015-2020</h2>
-                <p><i>Remote sensing of atmosphere and the earth, photogrammetry & image processing, climate and climate change, space vehicle dynamics, space mission design</i></p>
-        
-                <h2>Certificate in Meteorology | 2018-2020</h2>
-                <p><i>Synoptic meteorology, cloud physics, atmospheric dynamics, numerical weather prediction</i></p>
-            </div>
-            
-            <div class="light rowspan">
-                <h1 class="o">Technical Skills</h1>
+                <h1>Technical Skills</h1>
                 <h2>Software</h2>
                 <ul>
                     <li>ArcGIS Pro</li>
@@ -107,16 +88,68 @@
                 </ul>
             </div>
 
-            <div class="orange">
+
+            <div>
+                <p>I am a self-proclaimed "Jack-of-all-trades" based in Canada. While I occasionally do wall murals, my background is mainly in remote sensing and programming. 
+                    I graduated from York U in 2020 with a BSc. Honors in Earth & Atmospheric Science specializing in Space Science (aka satellites) and a Certificate in Meteorology.
+                    In 2024, I completed the GIS Applications Specialist post-graduate certificate at Fleming where I was able to build on the skills learned in my degree. </p>
+                <p>
+                    I love finding different ways to bridge the gap between science and art. 
+                    With my creativity from my artistic background and logical mind from my love of programming & science,
+                        I am well-equipped to find unique and resourceful solutions to challenging problems.
+                </p>
+                <div class="orange">
+                    <h1>Connect</h1>
+                    <a href="https://www.linkedin.com/in/talijonker/" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:tali.jonker@gmail.com" class="social"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sectiongreen" id="resume">
+        <div class="container2" >
+            <div class="light">
+                <h1 class="o">Education</h1>
+                <h2 class="left">GIS Applications Specialist Certificate | 2023-2024</h2>
+                <p><i>Spatial analysis, geovisualization, web design & web GIS development, GIS databases</i></p>
+        
+                <h2 class="left">BSc (Spec Hons) Space Science | 2015-2020</h2>
+                <p><i>Remote sensing of atmosphere and the earth, photogrammetry & image processing, climate and climate change, space vehicle dynamics, space mission design</i></p>
+        
+                <h2 class="left">Certificate in Meteorology | 2018-2020</h2>
+                <p><i>Synoptic meteorology, cloud physics, atmospheric dynamics, numerical weather prediction</i></p>
+            </div>
+            
+            <div class="light rowspan">
+                <h1 class="o">Projects</h1>
+                <h2 class="left">TCDSB Safe School Dashboard | GIS Applications Specialist | Feb - June 2024</h2>
+                <ul>
+                    <li>Georeferenced over 800 floorplans for 197 schools.</li>
+                    <li>Maintained multiple databases of school and floorplan files.</li>
+                    <li>Developed a python script to search through school folders for CAD files and import polylines and points with specific attributes into a feature dataset in a geodatabase in ArcGIS Pro.</li>
+                    <li>Created accessible dashboard showcasing floorplans, safety layers and relevant room use information for internal use.</li>
+                </ul>
+                <h2 class="left">Science Satellite Mission Proposal | Space Scientist | Jan - Apr 2020</h2>
+                <ul>
+                    <li>Led a team of ~15 and sub-team team of 5.</li>
+                    <li>Researched & wrote a trade study to find best science instruments for studying volcanic activity on Io.</li>
+                    <li>Found solution to teams issue of sending data back & forth from Io and Earth by using upcoming AI technology studying Earths volcanoes.</li>
+                </ul>
+            </div>
+
+            <div class="light">
                 <h1 class="o">Work History</h1>
-                <h2>Chocolatier & Shipper | Giddy Yo <br><h3>Apr 2021-Sept 2023</h3></h2>
+                <h2 class="left">Chocolatier & Shipper | Giddy Yo</h2>
+                <h3 class="left">Apr 2021-Sept 2023</h3>
                 <ul>
                     <li>Learned to use new machinery and trained team members on it.</li>
                     <li>Experimented with variations of sizes, flavors and inclusions to create a new product.</li>
                     <li>Created professional documentation for 50-100 products for Sales & Marketing.</li>
                 </ul>
         
-                <h2>Maintenance Lead Hand | Raymar North Inc. <br><h3>May 2017-Aug 2021</h3></h2>
+                <h2 class="left">Maintenance Lead Hand | Raymar North Inc.</h2>
+                <h3 class="left">May 2017-Aug 2021</h3>
                 <ul>
                     <li>Worked in a team of 2-4 and divided tasks among the team and made sure tasks were done efficiently and properly</li>
                     <li>Adapted to constantly changing work environments (changes in weather, the team, machinery breaking down, material availability, etc.)</li>
@@ -127,62 +160,46 @@
 
     </div>    
 
-    <div class="sectionwhite">   
-        <h1>Projects</h1>
-        <h2>TCDSB Safe School Dashboard | GIS Applications Specialist | Feb - June 2024</h2>
-        <ul>
-            <li>Georeferenced over 800 floorplans for 197 schools.</li>
-            <li>Maintained multiple databases of school and floorplan files.</li>
-            <li>Developed a python script to search through school folders for CAD files and import polylines and points with specific attributes into a feature dataset in a geodatabase in ArcGIS Pro.</li>
-            <li>Created accessible dashboard showcasing floorplans, safety layers and relevant room use information for internal use.</li>
-        </ul>
-        <h2>Science Satellite Mission Proposal | Space Scientist | Jan - Apr 2024</h2>
-        <ul>
-            <li>Led a team of ~15 and sub-team team of 5.</li>
-            <li>Researched & wrote a trade study to find best science instruments for studying volcanic activity on Io.</li>
-            <li>Found solution to teams issue of sending data back & forth from Io and Earth by using upcoming AI technology studying Earths volcanoes.</li>
-        </ul>
-    </div>
+    <div class="sectionblack">   
+        <h1 class="o">Programming Projects</h1>
+        <div class="light"> 
+            <h2>Python: CAD .dwg to .gdb</h2>
+            <p>This python code was developed to help bring layers from a CAD (.dwg) file to a geodatabase (gdb) in ArcGIS Pro.
+                The client had 197 schools, and each school had its own folder with the CAD floorplans. After georeferencing, 
+                this program would automate bringing each floorplan into a feature dataset created for each school in a gdb in ArcGIS Pro 
+            </p>
+            <p><b>Main Processing</b></p>
+            <ol>
+                <li>Loop through each school folder.</li>
+                <li>Check if feature dataset already exists in gdb, and if not, create feature dataset in gdb</li>
+                <li>Find .dwg datasets in each school folder</li>
+                <li>Extract Point and Polyline layers from each .dwg dataset</li>
+                <li>Rename and import layers to feature dataset in gdb.</li>
+                <li>Using a search cursor, extract specific features with ROOMTAG attribute and export as new feature class in the feature dataset</li>
+            </ol>
+        </div>
+        <div class="light"> 
+            <h2>HTML/CSS/JS: Website Development</h2>
+            <p>Using HTML, CSS, and JavaScript, I have enjoyed developing website structures. Using JavaScript I have been able to 
+                add in different functionality to the websites.
+            </p>
+            <p><b>Main Processing</b></p>
+            <ul>
+                <li><a href="https://catamaralina.github.io/heckin-tasty/" target="_blank">Clean & Modern Recipe Cards</a></li>
+                <li><a href="https://catamaralina.github.io/TypingProject/" target="_blank">Typing Project</a></li>
+                    <ul>
+                        <li>Reads & displays premade text files</li>
+                        <li>Locally saves user-inputted text until cleared</li>
+                        <li>Future functionality: Testing typing speed</li>
+                        <li>Future functionality: When text is loaded, let it skip a certain amount of letters/words to practice memorization</li>
+                    </ul>
 
-    <div class="light sectiongreen" id="Portfolio">
-        <h1 class="o">Contents</h1>
-        <a href = #satellite><h2 class="light">False Color Composite of Central Pennsylvania</h2></a>
-        <a href = #japan><h2 class="light">POI & trail map for Higashiyama, Japan</h2></a>
-        <a href = #topographic><h2 class="light">Topographic Map: Caledon, Ontario</h2></a>
-        <a href = #census><h2 class="light">Census Population: Caledon, Ontario</h2></a>
-        <a href = #qualititative><h2 class="light">Map: Caledon, Ontario</h2></a>
-        <a href = "https://storymaps.arcgis.com/stories/63c7832f7c424f8c964264d891045863" target="_blank"><h2>Great Blue Heron Nesting</h2></a>
-    </div>
 
-    <div class="sectionblack" id="satellite">
-
-        <img class="myImg" src="media/Geom75Final.jpg" alt="False Color Composite of Central Pennsylvania">
-
-
-    </div>
-
-    <div class="sectionblack" id="japan">
-        <img class="myImg" src="media/Higashiyama.jpg" alt="POI & trail map for Higashiyama, Japan">
-    </div>
-
-    <div class="sectionblack" id="topographic">
-        <img class="myImg" src="media/CaledonTopographicMap.jpg" alt="Topographic Map of Caledon, Ontario">
-    </div>
-
-    <div class="sectionblack" id="census">
-        <img class="myImg" src="media/CaledonCensus.jpg" alt="Census Map of Caledon, Ontario">
-    </div>
-
-    <div class="sectionblack" id="qualitative">
-        <img class="myImg" src="media/CaledonQualitative.jpg" alt="Qualitative Map of Caledon, Ontario">
+            </ul>
+        </div>
     </div>
 
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>    
 
     <script src="script.js"></script>
     <footer>
