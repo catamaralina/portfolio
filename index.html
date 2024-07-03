@@ -20,14 +20,15 @@
 
 <body><!-- beginning of content -->
     <div class="header">
-        <a class="split">Tali Jonker</a>
+        <a class="split"  href="index.html">Tali Jonker</a>
         <a href="#about">About Me</a>
         <a href="#resume">Resume</a>
-        <a href="#gisp">Portfolio</a>
+        <a href="#gisp">GIS</a>
+        <a href="#programming">Programming</a>
     </div>
 
 
-    <div class="sectiongreen" id="home">
+    <div class="sectiongreen" id="gisp">
         <h1 class="title">GIS Portfolio</h1>
 
         <h1 class="o" id="gisp">Contents</h1>
@@ -57,7 +58,75 @@
         <div id="caption"></div>
     </div>    
 
+    <!--     -----     -----     -----     PROGRAMMING PORTFOLIO     -----     -----     -----     -->
+    <div class="header">
+        <a href="https://github.com/catamaralina" target="_blank">GITHUB</a>
 
+    </div>
+
+    <div class="sectiongreen" id="programming">
+        <h1 class="title">Programming Portfolio</h1>
+        <h1 class="o" >Contents</h1>
+        <a href = #pythonCAD><h2 class="light">Python: CAD .dwg to .gdb</h2></a>
+        <a href = #pythonFLOW><h2 class="light">Python: Calculating River Runoff</h2></a>
+        <a href = #htmlcssjs><h2 class="light">HTML/CSS/JS: Website Development</h2></a>
+
+    </div>
+    <div class="sectionblack">   
+        <h1 class="o">Programming Projects</h1>
+        <div class="light"> <!--CAD TO GDB-->
+            <h2 id="pythonCAD"><a href="https://github.com/catamaralina/CADtoGDB" target="_blank">Python: CAD .dwg to .gdb</a></h2>
+            <p>This python code was developed to help bring layers from a CAD (.dwg) file to a geodatabase (gdb) in ArcGIS Pro.
+                The client had 197 schools, and each school had its own folder with the CAD floorplans. After georeferencing, 
+                this program would automate bringing each floorplan into a feature dataset created for each school in a gdb in ArcGIS Pro 
+            </p>
+            <p><b>Main Processing</b></p>
+            <ol>
+                <li>Loop through each school folder.</li>
+                <li>Check if feature dataset already exists in gdb, and if not, create feature dataset in gdb</li>
+                <li>Find .dwg datasets in each school folder</li>
+                <li>Extract Point and Polyline layers from each .dwg dataset</li>
+                <li>Rename and import layers to feature dataset in gdb.</li>
+                <li>Using a search cursor, extract specific features with ROOMTAG attribute and export as new feature class in the feature dataset</li>
+            </ol>
+        </div>
+
+        <div class="light"><!--FLOW RATES-->
+            <h2 id="pythonFLOW"><a href="https://github.com/catamaralina/PSP-Group-Assignment" target="_blank">Python: Calculating Flow Rates For the Grand River</a></h2>
+            <p>Runoff is described to be the total amount of water discharged from a watershed via river or streams, 
+                and the runoff ratio is the runoff for each watershed divided by the precipitation for that watershed 
+                (Minnesota Pollution Control Agency). This program uses open sourced data collected from the Grand River Watershed 
+                to determine statistical calculations of a selected specific station in a select month and then compares between 2018 and 2022. 
+                As well, calculates the average and compares it to other stations in the watershed.
+            </p>
+            <p><b>Main Processing</b></p>
+            <ul>
+                <li>Import csv data for years 2018 and 2022 into a list</li>
+                <li>User inputs a station and month to compare</li>
+                <li>Runoff is calculated, and also changes in flow, precipitation and runoff between years</li>
+                <li>Original and calculated values are outputted in table form</li>
+        </div>
+
+        <div class="light"> <!--WEBSITE DEV-->
+            <h2 id="htmlcssjs"><a>HTML/CSS/JS: Website Development</a></h2>
+            <p>Using HTML, CSS, and JavaScript, I have enjoyed developing website structures. Using JavaScript I have been able to 
+                add in different functionality to the websites.
+            </p>
+            <p><b>Main Processing</b></p>
+            <ul>
+                <li><a href="https://catamaralina.github.io/heckin-tasty/" target="_blank">Clean & Modern Recipe Cards</a></li>
+                <li><a href="https://catamaralina.github.io/TypingProject/" target="_blank">Typing Project</a></li>
+                    <ul>
+                        <li>Reads & displays premade text files</li>
+                        <li>Locally saves user-inputted text until cleared</li>
+                        <li>Future functionality: Testing typing speed</li>
+                        <li>Future functionality: When text is loaded, let it skip a certain amount of letters/words to practice memorization</li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+
+        <!--     -----     -----     -----     ABOUT ME     -----     -----     -----     -->
     <div class="sectionwhite" id="about">
         <div class="container2">
             <div>
@@ -107,6 +176,7 @@
         </div>
     </div>
 
+            <!--     -----     -----     -----     RESUME     -----     -----     -----     -->
     <div class="sectiongreen" id="resume">
         <div class="container2" >
             <div class="light">
@@ -160,7 +230,7 @@
 
     </div>    
 
-    <div class="sectionblack">   
+    <!-- <div class="sectionblack">   
         <h1 class="o">Programming Projects</h1>
         <div class="light"> 
             <h2>Python: CAD .dwg to .gdb</h2>
@@ -193,11 +263,9 @@
                         <li>Future functionality: Testing typing speed</li>
                         <li>Future functionality: When text is loaded, let it skip a certain amount of letters/words to practice memorization</li>
                     </ul>
-
-
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
 
