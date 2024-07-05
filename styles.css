@@ -24,7 +24,9 @@ body {
 /* FONT FORMATTING */
 a {
     text-decoration: none;
+    color: #FDAD16;
 }
+
 .sectionblack a {
     color: #FDAD16;
 }
@@ -473,6 +475,8 @@ footer
     float: center;
     margin-right: auto;
     margin-left: auto;
+    border-top: double 1px white;
+    margin-top: 20px;
 }
 
 
