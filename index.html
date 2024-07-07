@@ -26,6 +26,9 @@
         <a href="#resume">Resume</a>
         <a href="#programming">Programming</a>
         <a href="#gisp">GIS</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
 
@@ -40,6 +43,7 @@
         <a href = #census><h2 class="light">Census Population: Caledon, Ontario</h2></a>
         <a href = #qualititative><h2 class="light">Map: Caledon, Ontario</h2></a>
         <a href = "https://storymaps.arcgis.com/stories/63c7832f7c424f8c964264d891045863" target="_blank"><h2 class="light">Great Blue Heron Nesting</h2></a>
+        <br>
     </div>
     <div class="sectionblack container3">
         <div class="column">
@@ -62,19 +66,21 @@
         <div id="caption"></div>
     </div>    
 
-    <!--     -----     -----     -----     PROGRAMMING PORTFOLIO     -----     -----     -----     -->
+    <!--     -----     -----     -----     -----     PROGRAMMING PORTFOLIO     -----     -----     -----     -----     -->
     <div class="header">
         <a href="https://github.com/catamaralina" target="_blank">GITHUB</a>
-
     </div>
 
     <div class="sectiongreen" id="programming">
         <h1 class="title">Programming Portfolio</h1>
+        <p class="center">NOTE: All titles link to code found in Github repository.</p>
+        <br>
         <h1 class="o" >Contents</h1>
         <a href = #pythonCAD><h2 class="light">Python: CAD .dwg to .gdb</h2></a>
+        <a href = #oracle><h2 class="light">Oracle Objects & Oracle Spatial</h2></a>
         <a href = #pythonFLOW><h2 class="light">Python: Calculating River Runoff</h2></a>
         <a href = #htmlcssjs><h2 class="light">HTML/CSS/JS: Website Development</h2></a>
-
+        <br>
     </div>
     <div class="sectionblack">   
         <h1 class="o">Programming Projects</h1>
@@ -93,6 +99,19 @@
                 <li>Rename and import layers to feature dataset in gdb.</li>
                 <li>Using a search cursor, extract specific features with ROOMTAG attribute and export as new feature class in the feature dataset</li>
             </ol>
+            <br>
+        </div>
+
+        <div class="light"><!--ORACLESQL-->    
+            <h2 id="oracle"><a href="https://github.com/catamaralina/OracleSQL" target="_blank">Oracle Objects & Oracle Spatial</a></h2>
+            <p><b>Main Processing</b></p>
+            <ul>
+                <li>Section A1: Import feature classes using Oracle Java Shapefile Converter and SQL Developer. Transformed the coordinate system for data consistency.</li>
+                <li>Section A2: Implementing Linear Referencing Systems on road feature classes.</li>
+                <li>Section B1: Procedure calculating population density for city wards.</li>
+                <li>Section B2: Function calculating accident measure along highway using user-inputted GPS coordinates.</li>
+            </ul>
+            <br>
         </div>
 
         <div class="light"><!--FLOW RATES-->
@@ -109,10 +128,12 @@
                 <li>User inputs a station and month to compare</li>
                 <li>Runoff is calculated, and also changes in flow, precipitation and runoff between years</li>
                 <li>Original and calculated values are outputted in table form</li>
+            </ul>
+            <br>
         </div>
 
         <div class="light"> <!--WEBSITE DEV-->
-            <h2 id="htmlcssjs"><a>HTML/CSS/JS: Website Development</a></h2>
+            <h2 id="htmlcssjs"><a href="https://github.com/catamaralina" target="_blank">HTML/CSS/JS: Website Development</a></h2>
             <p>Using HTML, CSS, and JavaScript, I have enjoyed developing website structures. Using JavaScript I have been able to 
                 add in different functionality to the websites.
             </p>
@@ -127,6 +148,7 @@
                         <li>Future functionality: When text is loaded, let it skip a certain amount of letters/words to practice memorization</li>
                     </ul>
             </ul>
+            <br>
         </div>
     </div>
 
@@ -136,7 +158,22 @@
             <div>
                 <h1 class="hello">Hello, <br>I'm Tali!</h1>              
             </div>
-                
+
+            <div>
+                <p>I am a self-proclaimed "Jack-of-all-trades" based in Canada. While I occasionally do wall murals, my background is mainly in remote sensing and programming. 
+                    I graduated from York U in 2020 with a BSc. Honors in Earth & Atmospheric Science specializing in Space Science (aka satellites) and a Certificate in Meteorology.
+                    In 2024, I completed the GIS Applications Specialist post-graduate certificate at Fleming where I was able to build on the skills learned in my degree. </p>
+                <p>
+                    I love finding different ways to bridge the gap between science and art. 
+                    With my creativity from my artistic background and logical mind from my love of programming & science,
+                        I am well-equipped to find unique and resourceful solutions to challenging problems.
+                </p>
+                <div class="orange">
+                    <h1>Connect</h1>
+                    <a href="https://www.linkedin.com/in/talijonker/" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:tali.jonker@gmail.com" class="social"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
             <div class="rowspan">
                 <h1>Technical Skills</h1>
                 <h2>Software</h2>
@@ -156,33 +193,17 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
-                    <li>Python</li>
+                    <li>Python (arcpy, numpy, cv2, rasterio, matplotlib)</li>
                     <li>MATLAB</li>
                     <li>SQL (including PL/SQL)</li>
                     <li>Fortran</li>
                 </ul>
             </div>
 
-
-            <div>
-                <p>I am a self-proclaimed "Jack-of-all-trades" based in Canada. While I occasionally do wall murals, my background is mainly in remote sensing and programming. 
-                    I graduated from York U in 2020 with a BSc. Honors in Earth & Atmospheric Science specializing in Space Science (aka satellites) and a Certificate in Meteorology.
-                    In 2024, I completed the GIS Applications Specialist post-graduate certificate at Fleming where I was able to build on the skills learned in my degree. </p>
-                <p>
-                    I love finding different ways to bridge the gap between science and art. 
-                    With my creativity from my artistic background and logical mind from my love of programming & science,
-                        I am well-equipped to find unique and resourceful solutions to challenging problems.
-                </p>
-                <div class="orange">
-                    <h1>Connect</h1>
-                    <a href="https://www.linkedin.com/in/talijonker/" class="social"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:tali.jonker@gmail.com" class="social"><i class="far fa-envelope"></i></a>
-                </div>
-            </div>
         </div>
     </div>
 
-            <!--     -----     -----     -----     RESUME     -----     -----     -----     -->
+            <!--     -----     -----     -----     -----     RESUME     -----     -----     -----     -----     -->
     <div class="sectiongreen" id="resume">
         <div class="container2" >
             <div class="light">
@@ -236,43 +257,6 @@
         </div>
 
     </div>    
-
-    <!-- <div class="sectionblack">   
-        <h1 class="o">Programming Projects</h1>
-        <div class="light"> 
-            <h2>Python: CAD .dwg to .gdb</h2>
-            <p>This python code was developed to help bring layers from a CAD (.dwg) file to a geodatabase (gdb) in ArcGIS Pro.
-                The client had 197 schools, and each school had its own folder with the CAD floorplans. After georeferencing, 
-                this program would automate bringing each floorplan into a feature dataset created for each school in a gdb in ArcGIS Pro 
-            </p>
-            <p><b>Main Processing</b></p>
-            <ol>
-                <li>Loop through each school folder.</li>
-                <li>Check if feature dataset already exists in gdb, and if not, create feature dataset in gdb</li>
-                <li>Find .dwg datasets in each school folder</li>
-                <li>Extract Point and Polyline layers from each .dwg dataset</li>
-                <li>Rename and import layers to feature dataset in gdb.</li>
-                <li>Using a search cursor, extract specific features with ROOMTAG attribute and export as new feature class in the feature dataset</li>
-            </ol>
-        </div>
-        <div class="light"> 
-            <h2>HTML/CSS/JS: Website Development</h2>
-            <p>Using HTML, CSS, and JavaScript, I have enjoyed developing website structures. Using JavaScript I have been able to 
-                add in different functionality to the websites.
-            </p>
-            <p><b>Main Processing</b></p>
-            <ul>
-                <li><a href="https://catamaralina.github.io/heckin-tasty/" target="_blank">Clean & Modern Recipe Cards</a></li>
-                <li><a href="https://catamaralina.github.io/TypingProject/" target="_blank">Typing Project</a></li>
-                    <ul>
-                        <li>Reads & displays premade text files</li>
-                        <li>Locally saves user-inputted text until cleared</li>
-                        <li>Future functionality: Testing typing speed</li>
-                        <li>Future functionality: When text is loaded, let it skip a certain amount of letters/words to practice memorization</li>
-                    </ul>
-            </ul>
-        </div>
-    </div> -->
 
 
 

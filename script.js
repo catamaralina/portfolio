@@ -61,3 +61,16 @@ function topFunction() {
   const element = document.getElementById("scroll");
   element.scrollIntoView();
 }
+
+
+//------      ------     ------      HAMBURGER      ------      ------      ------
+// FROM: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+// Navbar hamburger response
+function hamburger() {
+  var x = document.getElementById("scroll");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}

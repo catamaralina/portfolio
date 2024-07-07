@@ -11,11 +11,12 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    background-color: #F6EEE1;
+    background-color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-
+    float: center;
+    display: block;
 }
 
 
@@ -33,6 +34,7 @@ a {
 
 h1 {
     font-family: "DM Serif Text", serif;
+    padding-top: 5px;
 }
 
 p, li{
@@ -190,14 +192,20 @@ ul li {
     background-color: white;
     align-content: center;
     height: auto;
+
+    /* max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 /* SECTION ORANGE */
 .orange {
     background-color:#FDAD16;
     border-radius: 20px;
-    margin-left:100px;
-    margin-right:100px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
 }
 
 /* SECTION GREEN*/
@@ -250,11 +258,10 @@ ul li {
 .container3 {
     display: flex;
     flex-wrap: nowrap;
-    padding: 5px;
 }
 
-.container3 .column {
-    flex: 25%;
+.column {
+    flex: 50%;
     padding: 5px;
 }
 
@@ -310,11 +317,6 @@ img.small{
     align-content: center;
 }
 
-img.side {
-    width: 500px;
-    margin: auto;
-}
-
 figure {
     border: 1px #cccccc solid;
     padding: 0px;
@@ -344,7 +346,8 @@ iframe {
 /* MODAL IMAGES*/
 .myImg {
     width: 100%;
-    max-width: 1080px;
+    /* max-width: 1080px; */
+    height: auto;
 }
 
 .modal {
@@ -464,21 +467,23 @@ a:hover {
     height: 500px;
 }
 
+/*     -----     -----     -----     -----     -----     -----     HAMBURGER     -----     -----     -----     -----     -----     -----*/
 
 
-
-
+.header a.icon {
+    display: none;
+  }
 
 /*     -----     -----     -----     -----     -----     -----     BUTTON     -----     -----     -----     -----     -----     -----*/
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 20px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: 1px solid white;
+    border: 1px solid #FDAD16;
     background-color: #FDAD16; /* Set a background color */
-    color: white; /* Text color */
+    color: rgb(0, 0, 0); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -511,3 +516,82 @@ footer
 }
 
 
+/*     -----     -----     -----     -----     -----     -----     RESPONSIVE     -----     -----     -----     -----     -----     -----*/
+
+
+@media screen and (max-width: 1500px) {
+    .header {
+        font-size: 28px;
+    }
+    .column {
+        flex: 100%;
+        display: block;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container2 {
+        grid-template-columns: 1fr;
+        display: block;
+    }
+    .header {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1.title {
+        font-size: 6em;
+        padding: 50px 10px;
+    }
+
+    .header a:not(:first-child) {display: none;}
+    .header a.icon {
+      float: right;
+      display: block;
+    }
+
+    .header a.split{
+        color: #FF5640;
+    }
+    .header.responsive {position: relative;}
+    .header.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+    .header.responsive a {
+        float: none;
+        position: relative;
+        display: block;
+        text-align: left;
+      }
+      
+    #myBtn {
+        bottom: 10px; /* Place the button at the bottom of the page */
+        right: 10px; /* Place the button 30px from the right */
+        padding: 10px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 16px; /* Increase font size */
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1.title {
+        font-size: 5em;
+        padding: 50px 10px;
+    }
+    p, li{
+        font-size: 1.15em;
+        text-align: justify;
+    }
+    .light {
+        font-weight: 300;
+    }
+}
