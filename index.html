@@ -37,23 +37,26 @@
 
         <h1 class="o" id="gisp">Contents</h1>
         <a href = #satellite><h2 class="light">False Color Composite of Central Pennsylvania</h2></a>
+        <a href = #contour><h2 class="light">Re-creating Trippy AI Generated Terrain Contours: Central Pennsylvania</h2></a>
         <a href = #japan><h2 class="light">POI & trail map for Higashiyama, Japan</h2></a>
         <a href = #geocode><h2 class="light">Toronto Police Movement: Drivetime to Speeding Locations</h2></a>
         <a href = #topographic><h2 class="light">Topographic Map: Caledon, Ontario</h2></a>
         <a href = #census><h2 class="light">Census Population: Caledon, Ontario</h2></a>
         <a href = #qualititative><h2 class="light">Map: Caledon, Ontario</h2></a>
-        <a href = "https://storymaps.arcgis.com/stories/63c7832f7c424f8c964264d891045863" target="_blank"><h2 class="light">Great Blue Heron Nesting</h2></a>
+        <!-- <a href = "https://storymaps.arcgis.com/stories/63c7832f7c424f8c964264d891045863" target="_blank"><h2 class="light">Great Blue Heron Nesting</h2></a> -->
+        <a href = #heron><h2 class="light">Great Blue Heron Nesting</h2></a>
         <br>
     </div>
     <div class="sectionblack container3">
         <div class="column">
+
             <img class="myImg" id="satellite" src="media/Geom75Final.jpg" alt="False Color Composite of Central Pennsylvania">
             <img class="myImg" id="japan" src="media/Higashiyama.jpg" alt="POI & trail map for Higashiyama, Japan">
             <img class="myImg" id="census" src="media/CaledonCensus.jpg" alt="Census Map of Caledon, Ontario">
-
+            <img class="myImg"><iframe id="heron" src="https://storymaps.arcgis.com/stories/63c7832f7c424f8c964264d891045863" width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
         </div>
         <div class="column">
-
+            <img class="myImg" id="contour" src="media/Geom75Final_AIContour2.jpg" alt="AI Contour False 3D Image of Central Pennsylvania">
             <img class="myImg" id="qualitative" src="media/CaledonQualitative.jpg" alt="Qualitative Map of Caledon, Ontario">
             <img class="myImg" id="geocode" src="media/GeocodingTOPolice.jpg" alt="Geocoding TO Police Open Data">
             <img class="myImg" id="topographic" src="media/CaledonTopographicMap.jpg" alt="Topographic Map of Caledon, Ontario">
@@ -176,7 +179,7 @@
             </div>
 
             <div>
-                <p>I am a self-proclaimed "Jack-of-all-trades" based in Canada. While I occasionally do wall murals, my background is mainly in remote sensing and programming. 
+                <p>I am a self-proclaimed "Jack-of-all-trades" based in Ontario, Canada. While I occasionally do wall murals, my background is mainly in remote sensing and programming. 
                     I graduated from York U in 2020 with a BSc. Honors in Earth & Atmospheric Science specializing in Space Science (aka satellites) and a Certificate in Meteorology.
                     In 2024, I completed the GIS Applications Specialist post-graduate certificate at Fleming where I was able to build on the skills learned in my degree. </p>
                 <p>
@@ -195,21 +198,19 @@
                 <h2>Software</h2>
                 <ul>
                     <li>ArcGIS Pro</li>
-                    <li>ESRI ArcGIS (Online, Survey123, InstantApps, API for JavaScript, StoryMaps, Dashboard, etc.) </li>
+                    <li>ESRI ArcGIS (Enterprise, Online, Survey123, InstantApps, API for Python, Experience Builder, Dashboard, etc.) </li>
                     <li>PCI Geomatic/Catalyst</li>
                     <li>Visual Studio Code</li>
-                    <li>Avenza MAPublisher</li>
                     <li>AutoCAD Map 3D</li>
                     <li>FME</li>
                     <li>PostgreSQL</li>
-                    <li>Oracle</LI>
                 </ul>
                 <h2>Programming</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
-                    <li>Python (arcpy, numpy, cv2, rasterio, matplotlib)</li>
+                    <li>Python (arcpy, numpy, pandas, rasterio, os)</li>
                     <li>MATLAB</li>
                     <li>SQL (including PL/SQL)</li>
                     <li>Fortran</li>
@@ -236,6 +237,19 @@
             
             <div class="light rowspan">
                 <h1 class="o">Projects</h1>
+                <h2 class="left">NG911 | GIS Analyst | Dec 2024 - ongoing </h2>
+                <ul>
+                    <li>Updating Road Centerline and Civic Addressing datasets to meet NG911 and NENA standards</li>
+                    <li>Configerating Address Manager application to simplify data updates.</li>
+                    <li>Using ArcGIS API for Python to monthly publish a public version of the Civic Addressing dataset to the GeoHub.</li>
+                    <li>Using python to run QA/QC checks on current Civic Addresses as well as Road Centerlines.</li>
+                </ul>
+                <h2 class="left">Forest Management Plan | GIS Analyst | Jan 2024 - ongoing </h2>
+                <ul>
+                    <li>Working with Forest Manager to create an Areas of Concern dataset and integrating Integrated multiple environmental and regulatory guidelines and updating as changes occur.</li>
+                    <li>Creating a way to view past stand designations and compare them to current assigned SQL designations.</li>
+                    <li>Developing process to shorten data update process, while keeping it user friendly (and non-coder friendly).</li>
+                </ul>
                 <h2 class="left">TCDSB Safe School Dashboard | GIS Applications Specialist | Feb - June 2024</h2>
                 <ul>
                     <li>Georeferenced over 800 floorplans for 197 schools.</li>
@@ -254,6 +268,13 @@
 
             <div class="light">
                 <h1 class="o">Work History</h1>
+                <h2 class="left">GIS Analyst | UCLG</h2>
+                <h3 class="left">Nov 2024-current</h3>
+                <ul>
+                    <li>Maintain and update public and internal facing web GIS applications</li>
+                    <li>Leading 911 data modernization by updating road and civic address datasets to follow NENA and NG911 standards</li>
+                    <li>Developing python scripts for automating monthly updates to GeoHub using ArcGIS API for Python</li>
+                </ul>
                 <h2 class="left">Chocolatier & Shipper | Giddy Yo</h2>
                 <h3 class="left">Apr 2021-Sept 2023</h3>
                 <ul>
